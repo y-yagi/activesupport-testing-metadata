@@ -6,11 +6,10 @@ require 'active_support/testing/metadata/version'
 Gem::Specification.new do |spec|
   spec.name          = "activesupport-testing-metadata"
   spec.version       = ActiveSupport::Testing::Metadata::VERSION
-  spec.authors       = ["yuuji.yaginuma"]
+  spec.authors       = ["Yuji Yaginuma"]
   spec.email         = ["yuuji.yaginuma@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Metadata (key-value) support for ActiveSupport::TestCase}
+  spec.homepage      = "https://github.com/y-yagi/activesupport-testing-metadata"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
