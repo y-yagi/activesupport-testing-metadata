@@ -1,6 +1,32 @@
-# Activesupport::Testing::Metadata
+# activesupport-testing-metadata
 
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/y-yagi/activesupport-testing-metadata.svg?branch=master)](https://travis-ci.org/y-yagi/activesupport-testing-metadata)
+
+Metadata (key-value) support for `ActiveSupport::TestCase.test` method.
+
+## Example
+
+```ruby
+require 'active_support/testing/metadata'
+
+class IntegrationTest < ActionDispatch::IntegrationTest
+  def setup
+    if metadata[:js]
+      Capybara.current_driver = Capybara.javascript_driver
+    else
+      Capybara.current_driver = Capybara.default_driver
+    end
+  end
+
+  test 'without js' do
+    # write test without js
+  end
+
+  test 'with js', js: true do
+    # write test with js
+  end
+end
+```
 
 ## Installation
 
@@ -17,10 +43,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install activesupport-testing-metadata
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
