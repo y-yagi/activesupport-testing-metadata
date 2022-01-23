@@ -1,6 +1,6 @@
 # activesupport-testing-metadata
 
-[![Build Status](https://travis-ci.org/y-yagi/activesupport-testing-metadata.svg?branch=master)](https://travis-ci.org/y-yagi/activesupport-testing-metadata)
+![](https://github.com/y-yagi/activesupport-testing-metadata/workflows/CI/badge.svg)
 
 Metadata (key-value) support for `ActiveSupport::TestCase.test` method.
 
